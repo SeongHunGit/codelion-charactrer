@@ -172,18 +172,17 @@ body {
   transform: rotate(-5deg);
 }
 
-/* 귀여운 삐딱새의 각진 코 */
+/* 귀여운 삐딱새의 작고 소중한 코 */
 .nose {
   position: absolute;
-  width: 0px;
-  height: 0px;
-  border-bottom: 50px solid var(--secondary-color);
-  border-left: 60px solid transparent;
-  border-right: 50px solid transparent;
-  border-radius: 5px;
-  bottom: 150px;
-  left: 85px;
+  width: 45px;
+  height: 25px;
+  background-color: var(--secondary-color);
+  border-radius: 20% 20% 50% 50%;
+  bottom: 160px;
+  left: 120px;
   transform: rotate(5deg);
+  box-shadow: 1px 2px 5px rgba(184, 119, 119, 0.884);
 }
 
 /* 귀여운 삐딱새의 야무진 입 */

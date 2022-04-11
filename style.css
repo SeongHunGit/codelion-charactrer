@@ -1,0 +1,173 @@
+/* RESET */
+body {
+  margin: 0;
+}
+h1 {
+  margin: 0;
+  font-size: 100%;
+  font-weight: normal;
+}
+:root {
+  --primary-color: beige;
+  --face-color: white;
+  --secondary-color: #ffd700;
+  --mousein-color: #ffb1b1;
+}
+
+/* 스타일 */
+body {
+  background-color: var(--primary-color);
+}
+
+/* 귀여운 삐딱새 */
+.bbidak {
+  position: relative;
+  top: 100px;
+  margin: 50px auto;
+  width: 400px;
+  height: 380px;
+}
+
+/* 귀여운 삐딱새의 얼굴 */
+.bbidak .face {
+  position: absolute;
+  bottom: 0;
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  border: 10px solid #000;
+  background-color: var(--face-color);
+}
+
+/* 귀여운 삐딱새의 볼살 */
+.bbidak .face-left {
+  position: absolute;
+  bottom: 0;
+  width: 150px;
+  height: 160px;
+  top: 160px;
+  right: 250px;
+  border: 10px solid #000;
+  border-radius: 42% 58% 45% 55% / 32% 30% 70% 68%;
+  background-color: var(--face-color);
+}
+.bbidak .face-hidden {
+  position: absolute;
+  background-color: var(--face-color);
+  border-radius: 42% 58% 45% 55% / 32% 30% 70% 68%;
+  width: 131px;
+  height: 166px;
+  top: 194px;
+  right: 285px;
+}
+
+/* 삐딱새의 초점잃은 눈 */
+.eye {
+  position: absolute;
+  width: 110px;
+  height: 120px;
+  border: 8px solid #000;
+  border-radius: 50%;
+}
+.eye.left {
+  top: 90px;
+  left: 5px;
+}
+.eye.right {
+  top: 120px;
+  right: 100px;
+}
+.pupil.left {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #000;
+  top: 10px;
+  left: 20px;
+}
+.pupil.right {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #000;
+  bottom: 10px;
+  right: 15px;
+}
+
+/* 귀여운 삐딱새의 각진 코 */
+.nose {
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  border-bottom: 50px solid var(--secondary-color);
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  bottom: 150px;
+  left: 85px;
+}
+
+/* 귀여운 삐딱새의 야무진 입 */
+.mouth {
+  position: absolute;
+  border: 10px solid #000;
+  border-radius: 15px 15px 50px 50px / 15px 15px 25px 25px;
+  width: 50px;
+  height: 80px;
+  bottom: 50px;
+  left: 100px;
+}
+.mouth-in {
+  position: absolute;
+  background-color: var(--mousein-color);
+  border: 8px solid #000;
+  border-bottom-style: hidden;
+  border-radius: 120px 15px 50px 0px / 91px 15px 25px 0px;
+  width: 42px;
+  height: 40px;
+  bottom: 0px;
+}
+
+/* 귀여운 삐딱새의 단짝 막대 사탕 */
+.candy {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border: 8px solid #000;
+  border-radius: 50%;
+  background-color: #cdf978;
+  left: 10px;
+  top: 40px;
+}
+.candy-mid {
+  position: absolute;
+  width: 100px;
+  height: 20px;
+  border: 8px solid #000;
+  border-bottom-color: #f5f593e8;
+  border-left-style: hidden;
+  border-right-style: hidden;
+  border-radius: 10px;
+  background-color: #ffff9e;
+  left: 18px;
+  top: 75px;
+}
+
+/* 귀여운 삐딱새의 홍조 */
+.flushing {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-color: #da6e6e2a;
+}
+.flushing.left {
+  top: 230px;
+  left: 10px;
+  border-radius: 48% 52% 51% 49% / 76% 48% 52% 24%;
+}
+.flushing.right {
+  top: 265px;
+  right: 110px;
+  border-radius: 28% 72% 12% 88% / 68% 38% 62% 32%;
+}

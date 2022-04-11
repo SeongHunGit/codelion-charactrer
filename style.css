@@ -22,10 +22,50 @@ body {
 /* 귀여운 삐딱새 */
 .bbidak {
   position: relative;
-  top: 100px;
+  top: 200px;
   margin: 50px auto;
   width: 400px;
   height: 380px;
+}
+
+/* 귀여운 삐딱새 헤어 */
+.bbidak .hair-left {
+  position: absolute;
+  z-index: 10;
+  bottom: 396px;
+  left: 100px;
+  width: 50px;
+  height: 70px;
+  border: 8px solid #000;
+  border-radius: 28% 72% 52% 48% / 22% 100% 0% 78%;
+  border-bottom-style: none;
+  background-color: var(--face-color);
+  transform: rotate(-15deg);
+}
+.bbidak .hair-mid {
+  position: absolute;
+  z-index: 10;
+  bottom: 408px;
+  left: 170px;
+  width: 60px;
+  height: 70px;
+  border: 8px solid #000;
+  border-radius: 55% 45% 100% 0% / 59% 100% 0% 41%;
+  border-bottom-style: none;
+  background-color: var(--face-color);
+}
+.bbidak .hair-right {
+  position: absolute;
+  z-index: 10;
+  bottom: 395px;
+  left: 250px;
+  width: 40px;
+  height: 70px;
+  border: 8px solid #000;
+  border-radius: 70% 30% 0% 100% / 86% 50% 50% 14%;
+  border-bottom-style: none;
+  background-color: var(--face-color);
+  transform: rotate(10deg);
 }
 
 /* 귀여운 삐딱새의 얼굴 */
@@ -95,6 +135,42 @@ body {
   bottom: 10px;
   right: 15px;
 }
+.eyebrow {
+  position: absolute;
+  width: 10px;
+  background-color: #000;
+  border-radius: 20px;
+}
+.eyebrow.left {
+  height: 90px;
+  top: 35px;
+  left: 110px;
+  transform: rotate(-30deg);
+}
+.eyebrow.mid-up {
+  height: 60px;
+  top: 60px;
+  left: 135px;
+  transform: rotate(10deg);
+}
+.eyebrow.mid-down {
+  height: 60px;
+  top: 60px;
+  left: 145px;
+  transform: rotate(-10deg);
+}
+.eyebrow.right {
+  height: 120px;
+  top: 20px;
+  left: 235px;
+  transform: rotate(45deg);
+}
+.eyebrow.right-sub {
+  height: 70px;
+  top: 55px;
+  left: 190px;
+  transform: rotate(-5deg);
+}
 
 /* 귀여운 삐딱새의 각진 코 */
 .nose {
@@ -102,10 +178,12 @@ body {
   width: 0px;
   height: 0px;
   border-bottom: 50px solid var(--secondary-color);
-  border-left: 50px solid transparent;
+  border-left: 60px solid transparent;
   border-right: 50px solid transparent;
+  border-radius: 5px;
   bottom: 150px;
   left: 85px;
+  transform: rotate(5deg);
 }
 
 /* 귀여운 삐딱새의 야무진 입 */
@@ -117,6 +195,7 @@ body {
   height: 80px;
   bottom: 50px;
   left: 100px;
+  transform: rotate(5deg);
 }
 .mouth-in {
   position: absolute;
@@ -138,7 +217,8 @@ body {
   border-radius: 50%;
   background-color: #cdf978;
   left: 10px;
-  top: 40px;
+  top: 45px;
+  box-shadow: 10px 1px 10px rgba(0, 0, 0, 0.452);
 }
 .candy-mid {
   position: absolute;
@@ -151,7 +231,19 @@ body {
   border-radius: 10px;
   background-color: #ffff9e;
   left: 18px;
-  top: 75px;
+  top: 80px;
+  transform: rotate(-14deg);
+}
+.candy-stick {
+  position: absolute;
+  width: 12px;
+  height: 100px;
+  border: 8px solid #000;
+  border-radius: 0 0 10px 10px;
+  background-color: aliceblue;
+  top: 140px;
+  left: 90px;
+  transform: rotate(-20deg);
 }
 
 /* 귀여운 삐딱새의 홍조 */

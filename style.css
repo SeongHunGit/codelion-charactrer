@@ -19,6 +19,31 @@ body {
   background-color: var(--primary-color);
 }
 
+/* animaion */
+@keyframes 눈동자왼쪽 {
+  from {
+    transform: rotate(30deg);
+  }
+  to {
+    transform: rotate(30deg) translate(5px);
+  }
+}
+@keyframes 눈동자오른쪽 {
+  from {
+    transform: rotate(-30deg);
+  }
+  to {
+    transform: rotate(-40deg) translate(-5px);
+  }
+}
+@keyframes 막대사탕 {
+  from {
+    transform: rotate(-10deg);
+  }
+  to {
+    transform: rotate(20deg) translate(40px);
+  }
+}
 /* 귀여운 삐딱새 */
 .bbidak {
   position: relative;
@@ -125,6 +150,7 @@ body {
   background-color: #000;
   top: 10px;
   left: 20px;
+  animation: 눈동자왼쪽 1s infinite alternate;
 }
 .pupil.right {
   position: absolute;
@@ -134,6 +160,7 @@ body {
   background-color: #000;
   bottom: 10px;
   right: 15px;
+  animation: 눈동자오른쪽 1s infinite alternate;
 }
 .eyebrow {
   position: absolute;
@@ -218,6 +245,7 @@ body {
   left: 10px;
   top: 45px;
   box-shadow: 10px 1px 10px rgba(0, 0, 0, 0.452);
+  animation: 막대사탕 1s infinite alternate;
 }
 .candy-mid {
   position: absolute;
@@ -229,8 +257,7 @@ body {
   border-right-style: hidden;
   border-radius: 10px;
   background-color: #ffff9e;
-  left: 18px;
-  top: 80px;
+  top: 25px;
   transform: rotate(-14deg);
 }
 .candy-stick {
@@ -240,8 +267,8 @@ body {
   border: 8px solid #000;
   border-radius: 0 0 10px 10px;
   background-color: aliceblue;
-  top: 140px;
-  left: 90px;
+  top: 95px;
+  left: 70px;
   transform: rotate(-20deg);
 }
 
